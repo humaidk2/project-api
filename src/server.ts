@@ -80,6 +80,6 @@ app.get("/projects/:username/:project_id", (req, res) => {
     res.send(JSON.stringify(foundProject, null, 4))
 })
 
-app.listen(3000, () => {
+module.exports = app.listen(3000, () => {
     console.log("listening on port", PORT)
 })
