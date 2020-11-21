@@ -7,13 +7,14 @@ let should = chai.should()
 
 chai.use(chaiHttp)
 
-describe("Project", () => {
-    describe("/GET projects", () => {
-        it("it should GET project details", (done) => {
+describe("Server", () => {
+    describe("/GET invalid url", () => {
+        it("it should GET no valid response", (done) => {
             chai.request(server)
-                .get("/projects/humaidk2")
+                .get("/test")
                 .end((err, res) => {
-                    res.should.have.status(200)
+                    res.should.have.status(404)
+                    res.body.should.be.deep.equal({})
                     done()
                 })
         })
