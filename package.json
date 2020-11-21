@@ -7,12 +7,13 @@
     "start": "npm run build && node build/server.js",
     "start:dev": "nodemon",
     "build": "rimraf ./build && tsc",
-    "test": "mocha -r ts-node/register src/*.test.ts"
+    "test": "mocha -r ts-node/register src/**/*.test.ts"
   },
   "author": "Humaid Khan",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "helmet": "^4.2.0"
   },
   "devDependencies": {
     "@types/chai": "^4.2.14",
