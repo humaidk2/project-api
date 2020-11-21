@@ -9,7 +9,7 @@
     "build": "rimraf ./build && tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Humaid Khan",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"

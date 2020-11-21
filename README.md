@@ -37,14 +37,19 @@ docker-compose -f docker-compose.dev.yml up
 -   [] Test each route using unit testing using mocha, chai
 -   [] Look in to integration testing
 -   [] Setup docker for production
+-   [] Move start script to node, add sigterm for process management?
 -   [] Deploy code to heroku?
 -   [] Look in to end to end testing?
 -   [] Setup husky for precommit, prepush testing?
 -   [] Setup github actions for continuous integration/continuous deployment?
 -   [] Setup Database schema/Database?
--   [] Setup projects to fetch data from github sdk?
+-   [] Setup projects to fetch data from github api/sdk?
 -   [] Setup front-end using next js
 -   [] Design page to display user and project data
 -   [] Make use of the project-api in the front-end
 -   [] Test front-end using jest
 -   [] Deploy front-end?
+
+### Author
+
+> (Humaid Khan)[https://humaidkhan.com]
