@@ -27,16 +27,21 @@ docker-compose -f docker-compose.dev.yml up
 
 # Todo
 
+### Back-end
+
 -   [x] Initialize app on github
 -   [x] Setup basic project service returning dummy data
 -   [x] Setup Docker for development using dockerfile and compose
 -   [x] Setup typescript for type inference
 -   [x] Setup eslint to easily detect inspection errors
 -   [x] Setup prettier to have a standard code format and fix eslint errors easily
--   [] Move routes to separate files for maintainability
--   [] Test each route using unit testing using mocha, chai
+-   [x] Move routes to separate files for maintainability
+-   [x] Test each route using unit testing using mocha, chai
 -   [] Look in to integration testing
 -   [] Setup docker for production
+
+### Optional
+
 -   [] Move start script to node, add sigterm for process management?
 -   [] Deploy code to heroku?
 -   [] Look in to end to end testing?
@@ -44,6 +49,9 @@ docker-compose -f docker-compose.dev.yml up
 -   [] Setup github actions for continuous integration/continuous deployment?
 -   [] Setup Database schema/Database?
 -   [] Setup projects to fetch data from github api/sdk?
+
+### Front-end
+
 -   [] Setup front-end using next js
 -   [] Design page to display user and project data
 -   [] Make use of the project-api in the front-end
