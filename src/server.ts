@@ -24,6 +24,23 @@ const users = [
     },
 ]
 
+const projects = [
+    {
+        id: 5,
+        title: "Money-io",
+        description: "E-wallet application",
+        contributers: ["humaidk2"],
+        numOfCommits: 300,
+    },
+    {
+        id: 6,
+        title: "Storit",
+        description: "p2p cloud storage",
+        contributers: ["humaidk2"],
+        numOfCommits: 2000,
+    },
+]
+
 app.get("/projects/:username", (req, res) => {
     /*
     {
@@ -42,6 +59,25 @@ app.get("/projects/:username", (req, res) => {
     )
     res.setHeader("Content-Type", "application/json")
     res.send(JSON.stringify(foundUser, null, 4))
+})
+
+app.get("/projects/:username/:project_id", (req, res) => {
+    /*
+    {
+        id: project_id,
+        title: project_title,
+        description: readme_description
+        contributers :[]
+        numOfCommits: 4
+    }
+    */
+    const foundProject = projects.find(
+        (project) =>
+            project.id === req.params.project_id &&
+            project.contributers.indexOf(req.params.username) !== -1
+    )
+    res.setHeader("Content-Type", "application/json")
+    res.send(JSON.stringify(foundProject, null, 4))
 })
 
 app.listen(3000, () => {
