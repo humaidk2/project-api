@@ -73,7 +73,7 @@ app.get("/projects/:username/:project_id", (req, res) => {
     */
     const foundProject = projects.find(
         (project) =>
-            project.id === req.params.project_id &&
+            project.id === Number(req.params.project_id) &&
             project.contributers.indexOf(req.params.username) !== -1
     )
     res.setHeader("Content-Type", "application/json")
