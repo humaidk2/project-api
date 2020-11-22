@@ -1,9 +1,7 @@
 FROM node:12
 
 
-RUN npm install -g nodemon
-
-WORKDIR /usr/src/app
+WORKDIR /usr/src/app/front
 
 COPY package*.json ./
 
@@ -12,7 +10,8 @@ RUN npm install && npm cache clean --force
 
 COPY . .
 
-EXPOSE 8080
+# RUN npm run build
+EXPOSE 3000
 
 
-CMD ["npm", "start"]
+CMD ["npm", "run", "dev"]

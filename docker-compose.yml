@@ -2,10 +2,10 @@ version: "2.4"
 services:
     node:
         image: humaidk2/node-simple
-        ports: [80:3000]
+        ports: [8080:8080]
         command: nodemon
         environment:
-            - PORT=3000
-            - HOST=localhost:3000
+            - PORT=8080
+            - HOST=localhost:8080
         volumes:
             - ./:/usr/src/app/
