@@ -5,10 +5,10 @@ const Projects = ({}) => {
         <div className="projects">
             <div className="projects-list">
                 <div className="project-headers">
-                    <div>Name</div>
-                    <div>Description</div>
-                    <div>Contributers</div>
-                    <div>Commits</div>
+                    <div className="project-header">Name</div>
+                    <div className="project-header project-header-description">Description</div>
+                    <div className="project-header">Contributers</div>
+                    <div className="project-header">Commits</div>
                 </div>
                 <Project />
             </div>
@@ -32,10 +32,24 @@ const Projects = ({}) => {
                         display: flex;
                         align-items: center;
                         justify-content: space-around;
+                        padding: 5px;
+                        border-radius: 10px;
                     }
-                    .project-headers div {
-                        flex: 1 1 0
+                    .project-header {
+                        display: flex;
+                        flex: 2 1 0;
+                        text-align: center;
+                        margin: 5px;
                     }
+                    .project-header:last-child{
+                        justify-content:center;
+                    }
+                    .project-header-description{
+                        flex: 9 1 0;
+                    }
+                    // .project-header-description {
+                    //     flex: 2 1 0;
+                    // }
                 `}
             </style>
         </div>

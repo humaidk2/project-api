@@ -5,7 +5,7 @@ const Project = () => {
         <div className="project">
             <div className="project-title">Storit</div>
             <div className="project-description">Lorem ipsum dolor, sit amet consectetur adipisicing elitquia quisquam beatae sed aut!</div>
-            <div className="project-contributers">cool, done</div>
+            <div className="project-contributers">cool, done, john, tom, bret, fifty, fasfa,asf</div>
             <div className="project-commits">400</div>
             <style jsx>
                 {`
@@ -21,30 +21,22 @@ const Project = () => {
                     flex: 1 1 0;
                     
                     display: flex;
-                    align-items: center;
-                    justify-content: center;
                     background: yellow;   
                 }
                 .project-description {
                     flex: 4 1 0;
                     
                     display: flex;
-                    align-items: center;
-                    justify-content: center;
                     background: yellow;   
                 }
                 .project-contributers {
                     flex: 1 1 0;
-                    
                     display: flex;
-                    align-items: center;
-                    justify-content: center;
                     background: yellow;   
                 }
                 .project-commits {
                     flex: 1 1 0;
                     display: flex;
-                    align-items: center;
                     justify-content: center;
                     background: yellow;   
                 }
