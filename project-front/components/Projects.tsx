@@ -3,6 +3,7 @@ import Project from './Project'
 const Projects = ({}) => {
     return (
         <div className="projects">
+            <h1>Projects</h1>
             <div className="projects-list">
                 <div className="project-headers">
                     <div className="project-header">Name</div>
@@ -16,16 +17,25 @@ const Projects = ({}) => {
                 {`
                     .projects {
                         flex: 3 1 0;
-                        background: yellow;
+                        background: #f9f7f7;
                         display: flex;
+                        flex-direction: column;
                         justify-content: center;
                         align-items: center;
                     }
                     .projects-list {
                         height: 80%;
                         width: 80%;
-                        background: grey;
+                        background: #112d4e;
                         padding: 5%;
+                        box-shadow:
+                            0 2.8px 2.2px rgba(17, 45, 78, 0.034),
+                            0 6.7px 5.3px rgba(17, 45, 78, 0.048),
+                            0 12.5px 10px rgba(17, 45, 78, 0.06),
+                            0 22.3px 17.9px rgba(17, 45, 78, 0.072),
+                            0 41.8px 33.4px rgba(17, 45, 78, 0.086),
+                            0 100px 80px rgba(17, 45, 78, 0.12);
+                        border-radius:  10px;
                     }
                     .project-headers {
                         height: 70px;
@@ -33,7 +43,8 @@ const Projects = ({}) => {
                         align-items: center;
                         justify-content: space-around;
                         padding: 5px;
-                        border-radius: 10px;
+                        border-radius: 5px;
+                        color: #f9f7f7;
                     }
                     .project-header {
                         display: flex;
