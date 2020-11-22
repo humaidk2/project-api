@@ -13,6 +13,24 @@ To run this service for development,
 docker-compose -f docker-compose.dev.yml build
 docker-compose -f docker-compose.dev.yml up
 
+# Production:
+
+### Simple setup
+
+-   install git
+-   install docker
+-   clone project
+-   docker-compose up
+
+### Better setup
+
+-   create a new docker compose with nginx and https
+-   configure https to use nginx configuration file
+-   install git
+-   install docker
+-   clone project
+-   docker-compose up
+
 # Tech Stack
 
 -   Node
@@ -37,11 +55,10 @@ docker-compose -f docker-compose.dev.yml up
 -   [x] Setup prettier to have a standard code format and fix eslint errors easily
 -   [x] Move routes to separate files for maintainability
 -   [x] Test each route using unit testing using mocha, chai
--   [] Look in to integration testing
--   [] Setup docker for production
 
 ### Optional
 
+-   [] Setup docker for production
 -   [] Move start script to node, add sigterm for process management?
 -   [] Deploy code to heroku?
 -   [] Look in to end to end testing?
