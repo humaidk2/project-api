@@ -5,7 +5,7 @@ const projectsProjectRoute = require("./routes/projects/getProject")
 
 const app = express()
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 8080
 
 app.use(helmet())
 
@@ -15,6 +15,6 @@ app.use("/*", (req, res) => {
     res.status(404).send({})
 })
 
-module.exports = app.listen(3000, () => {
+module.exports = app.listen(PORT, () => {
     console.log("listening on port", PORT)
 })
