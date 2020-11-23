@@ -11,12 +11,12 @@ const users = [
         projects: [
             {
                 id: 5,
-                url: `${process.env.HOST}/projects/humaidk2/${5}`,
+                url: `projects/humaidk2/${5}`,
                 title: "Money-io",
             },
             {
                 id: 6,
-                url: `${process.env.HOST}/projects/humaidk2/${6}`,
+                url: `projects/humaidk2/${6}`,
                 title: "Storit",
             },
         ],
