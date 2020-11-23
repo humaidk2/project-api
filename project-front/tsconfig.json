@@ -19,7 +19,9 @@
   },
   "exclude": [
     "./node_modules/*",
-    "next.config.js"
+    "next.config.js",
+    "out",
+    ".next"
   ],
   "include": [
     "next-env.d.ts",

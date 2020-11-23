@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Nav component Nav should render without throwing an error 1`] = `
+<nav
+  className="navigation"
+>
+  <div>
+    Hi, Welcome to test's page
+  </div>
+  <style
+    jsx={true}
+  >
+    
+                    .navigation {
+                        height: 60px;
+                        z-index: 1;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        color: #f9f7f7;
+                        background: #112d4e;
+                        border-bottom: 0.2px solid rgba(17, 45, 78, 0.2);
+                        box-shadow: 0 20px 20px rgba(17, 45, 78, 0.1);
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        padding: 5px;
+                        padding-right: 10px;
+                    }
+                    .navigation div {
+                        margin: 5px;
+                    }
+                
+  </style>
+</nav>
+`;
