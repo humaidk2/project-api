@@ -1,19 +1,13 @@
 import React from "react"
-const Project = () => {
+const Project = ({ project }) => {
     return (
         <div className="project">
-            <div className="project-title">Storit</div>
-            <div className="project-description">
-                {" "}
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-                ea magnam eveniet, doloremque non minus tempora, impedit
-                inventore facere fuga ut cupiditate itaque vitae recusandae
-                quaerat. Assumenda impedit velit at.
-            </div>
+            <div className="project-title">{project.title}</div>
+            <div className="project-description">{project.description}</div>
             <div className="project-contributers">
-                cool, done, john, tom, bret, fifty, fasfa,asf
+                {project.contributers.join(", ")}
             </div>
-            <div className="project-commits">400</div>
+            <div className="project-commits">{project.numOfCommits}</div>
             <style jsx>
                 {`
                     .project {

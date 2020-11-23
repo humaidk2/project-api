@@ -1,5 +1,5 @@
 import React from "react"
-const Profile = ({}) => {
+const Profile = ({ username, name }) => {
     return (
         <div className="profile">
             <div className="profile-pic">
@@ -10,11 +10,11 @@ const Profile = ({}) => {
             </div>
             <div className="profile-username">
                 <div className="field-title">Username:</div>
-                <div className="field-value">humaidk2</div>
+                <div className="field-value">{username}</div>
             </div>
             <div className="profile-name">
                 <div className="field-title">Name:</div>
-                <div className="field-value">humaid</div>
+                <div className="field-value">{name}</div>
             </div>
             <style jsx>
                 {`

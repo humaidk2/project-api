@@ -1,10 +1,8 @@
-import React from 'react'
-const Nav = ({username}) => {
+import React from "react"
+const Nav = ({ username }) => {
     return (
         <nav className="navigation">
-            <div>
-                {`Hi, ${username} , Welcome to my website`}
-            </div>
+            <div>{`Hi, Welcome to ${username}'s page`}</div>
             <style jsx>
                 {`
                     .navigation {
@@ -15,8 +13,8 @@ const Nav = ({username}) => {
                         width: 100%;
                         color: #f9f7f7;
                         background: #112d4e;
-                        border-bottom: 0.2px solid rgba(17,45,78,0.2);
-                        box-shadow:0 20px 20px rgba(17, 45, 78, 0.1);
+                        border-bottom: 0.2px solid rgba(17, 45, 78, 0.2);
+                        box-shadow: 0 20px 20px rgba(17, 45, 78, 0.1);
                     }
                 `}
             </style>

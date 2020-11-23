@@ -5,41 +5,41 @@ import Profile from "../components/Profile"
 import Projects from "../components/Projects"
 import { useEffect } from "react"
 
-export default function Home({ data }) {
+export default function Home({ user, projects }) {
     return (
         <div className={styles.container}>
             <Head>
                 <title>Projects</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <Nav username={data.username} />
+            <Nav username={user.username} />
             <main className={styles.main}>
-                <Profile />
-                <Projects />
+                <Profile username={user.username} name={user.name} />
+                <Projects projects={projects} />
             </main>
         </div>
     )
 }
 export async function getServerSideProps(context) {
     const res = await fetch("http://project-api_node_1:8080/projects/humaidk2")
-    const data = await res.json()
-    if (!data) {
+    const user = await res.json()
+    if (!user) {
         return {
             notFound: true,
         }
     }
     const projects = []
-    for (let i = 0; i < data.projects.length; i++) {
+    for (let i = 0; i < user.projects.length; i++) {
         let projectRes = await fetch(
-            `http://project-api_node_1:8080/${data.projects[i].url}`
+            `http://project-api_node_1:8080/${user.projects[i].url}`
         )
         let projectData = await projectRes.json()
         await projects.push(projectData)
     }
-    console.log(projects)
     return {
         props: {
-            data,
+            user,
+            projects,
         }, // will be passed to the page component as props
     }
 }

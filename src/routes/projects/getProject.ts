@@ -6,8 +6,12 @@ const projects = [
     {
         id: 5,
         title: "Money-io",
-        description: "E-wallet application",
-        contributers: ["humaidk2"],
+        description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore\
+        ea magnam eveniet, doloremque non minus tempora, impedit\
+        inventore facere fuga ut cupiditate itaque vitae recusandae\
+        quaerat. Assumenda impedit velit at.",
+        contributers: ["humaidk2", "jon", "don"],
         numOfCommits: 300,
     },
     {
