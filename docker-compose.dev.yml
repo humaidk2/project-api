@@ -23,3 +23,4 @@ services:
             - ./project-front:/usr/src/app/front
             - /usr/src/app/front/node_modules
             - /usr/src/app/front/.next
+        depends_on: [node]
