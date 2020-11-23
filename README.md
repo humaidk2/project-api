@@ -17,6 +17,17 @@ Note: If you're installing a new npm package,
 you will need to rebuild your app by doing
 docker-compose -f docker-compose.dev.yml build
 
+## **\***Running URL**\***
+
+The back-end api will run on:
+
+http://localhost:8080/projects/humaidk2
+http://localhost:8080/projects/humaidk2/5
+
+The front-end will run on
+
+http://localhost:3000
+
 # Test:
 
 ## Back-end:

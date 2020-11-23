@@ -1,11 +1,25 @@
 version: "2.4"
 services:
     node:
-        image: humaidk2/node-simple
+        build:
+            context: .
+            dockerfile: Dockerfile
         ports: [8080:8080]
-        command: nodemon
         environment:
             - PORT=8080
             - HOST=localhost:8080
         volumes:
             - ./:/usr/src/app/
+    nextjs:
+        build:
+            context: project-front
+            dockerfile: Dockerfile
+        ports: [80:3000]
+        environment:
+            - PORT=80
+            - HOST=localhost
+        volumes:
+            - ./project-front:/usr/src/app/front
+            - /usr/src/app/front/node_modules
+            - /usr/src/app/front/.next
+        depends_on: [node]
