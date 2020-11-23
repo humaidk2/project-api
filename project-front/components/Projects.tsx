@@ -44,26 +44,18 @@ const Projects = ({ projects }) => {
                         height: 70px;
                         display: flex;
                         align-items: center;
-                        justify-content: space-around;
-                        padding: 5px;
+                        justify-content: flex-start;
                         border-radius: 5px;
                         color: #f9f7f7;
                     }
                     .project-header {
                         display: flex;
-                        flex: 2 1 0;
-                        text-align: center;
-                        margin: 5px;
-                    }
-                    .project-header:last-child {
-                        justify-content: center;
+                        flex: 1 1 0;
+                        text-align: left;
                     }
                     .project-header-description {
-                        flex: 9 1 0;
+                        flex: 4 1 0;
                     }
-                    // .project-header-description {
-                    //     flex: 2 1 0;
-                    // }
                 `}
             </style>
         </div>

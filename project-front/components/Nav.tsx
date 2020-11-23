@@ -15,6 +15,14 @@ const Nav = ({ username }) => {
                         background: #112d4e;
                         border-bottom: 0.2px solid rgba(17, 45, 78, 0.2);
                         box-shadow: 0 20px 20px rgba(17, 45, 78, 0.1);
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        padding: 5px;
+                        padding-right: 10px;
+                    }
+                    .navigation div {
+                        margin: 5px;
                     }
                 `}
             </style>
