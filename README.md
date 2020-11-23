@@ -1,7 +1,9 @@
 # Project api
 
 Description:
+
 A REST API service for serving project information for users
+
 A Front-end that utilizes the REST service
 
 ![Image of project-api front-end](./screenshot.png)
@@ -11,20 +13,27 @@ A Front-end that utilizes the REST service
 To run this project for development,
 
 docker-compose -f docker-compose.dev.yml build
+
 docker-compose -f docker-compose.dev.yml up
 
 Note: If you're installing a new npm package,
 you will need to rebuild your app by doing
+
 docker-compose -f docker-compose.dev.yml build
 
-## **\***Running URL**\***
+## **Running URL**
 
 The back-end api will run on:
 
+Test User:
+
 http://localhost:8080/projects/humaidk2
+
+Test Project:
+
 http://localhost:8080/projects/humaidk2/5
 
-The front-end will run on
+Front-end:
 
 http://localhost:3000
 
