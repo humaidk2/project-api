@@ -5,9 +5,9 @@ const router = express.Router({ mergeParams: true })
 
 const users = [
     {
+        id: 5,
         username: "humaidk2",
         name: "humaid",
-        id: 5,
         projects: [
             {
                 id: 5,

@@ -10,7 +10,7 @@ const projects = [
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore\
         ea magnam eveniet, doloremque non minus tempora, impedit\
         inventore facere fuga ut cupiditate itaque vitae recusandae\
-        quaerat. Assumenda impedit velit at.",
+        quaerat. Assumenda impedit velit.",
         contributers: ["humaidk2", "jon", "don"],
         numOfCommits: 300,
     },
