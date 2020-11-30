@@ -63,10 +63,10 @@ async function getRequest(res, url) {
             "User-Agent": "request",
         },
         url,
-        auth: {
-            username: "humaidk2",
-            password: "14f57e550749d647a2f80224f6beb2d4dc0b8a88",
-        },
+        // auth: {
+        //     username: "humaidk2",
+        //     password: "",
+        // },
     }
     return await new Promise((resolve) =>
         request(options, (error, response, body) => {
