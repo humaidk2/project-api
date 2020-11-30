@@ -13,7 +13,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "helmet": "^4.2.0"
+    "helmet": "^4.2.0",
+    "request": "^2.88.2"
   },
   "devDependencies": {
     "@types/chai": "^4.2.14",
