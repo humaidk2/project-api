@@ -4,7 +4,7 @@ const Project = ({ project }) => {
         <div className="project">
             <div className="project-field">{project.title}</div>
             <div className="project-field project-description">
-                {project.description}
+                <p>{project.description}</p>
             </div>
             <div className="project-field">
                 {project.contributers.join(", ")}
@@ -13,7 +13,7 @@ const Project = ({ project }) => {
             <style jsx>
                 {`
                     .project {
-                        height: 80px;
+                        height: 70px;
                         width: 100%;
                         border-radius: 10px;
                         padding: 5px;
@@ -33,8 +33,14 @@ const Project = ({ project }) => {
                     .project-description {
                         flex: 4 1 0;
                         display: flex;
+                        font-size: 0.7rem;
+                        overflow-y: auto;
+                        padding: 0;
                         align-items: center;
-                        justify-content: flex-start;
+                        max-height: 100%;
+                    }
+                    .project-description p {
+                        max-height: 100%;
                     }
                 `}
             </style>

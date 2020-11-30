@@ -42,11 +42,13 @@ http://localhost:3000
 ## Back-end:
 
 Run from root directory:
+
 npm test
 
 ## Front-end:
 
 cd project-front
+
 npm run test
 
 # Production:
@@ -115,7 +117,7 @@ Deploy front-end:
 -   [] Setup husky for precommit, prepush testing?
 -   [] Setup github actions for continuous integration/continuous deployment?
 -   [] Setup Database schema/Database?
--   [] Setup projects to fetch data from github api/sdk?
+-   [x] Setup projects to fetch data from github api/sdk?
 -   [] Deploy front-end with vercel?
 
 ### Front-end
