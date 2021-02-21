@@ -53,6 +53,7 @@ router.get("/", async (req, res) => {
         )
         let link = await commitResponseHeaders.link
         let commits = 0
+
         if (link) {
             link = await link.split(", ")
             link = await link[link.length - 1]
